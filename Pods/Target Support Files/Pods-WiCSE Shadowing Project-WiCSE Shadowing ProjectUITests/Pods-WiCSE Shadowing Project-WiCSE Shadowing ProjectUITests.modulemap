@@ -1,0 +1,6 @@
+framework module Pods_WiCSE_Shadowing_Project_WiCSE_Shadowing_ProjectUITests {
+  umbrella header "Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

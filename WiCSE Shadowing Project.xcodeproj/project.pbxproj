@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336A2DCF0C4E639D28F95F79 /* Pods_WiCSE_Shadowing_Project_WiCSE_Shadowing_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1957E9BD1933619057D287B8 /* Pods_WiCSE_Shadowing_Project_WiCSE_Shadowing_ProjectUITests.framework */; };
 		442B2E1F29B7E50D0058935F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 442B2E1E29B7E50D0058935F /* FirebaseFirestore */; };
 		442B2E2129B7E53E0058935F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 442B2E2029B7E53E0058935F /* FirebaseFirestoreSwift */; };
 		442B2E2529B7EED40058935F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B2E2429B7EED40058935F /* ViewController.swift */; };
@@ -23,6 +24,8 @@
 		5D8D3E4429B713BF00E59D4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D8D3E4329B713BF00E59D4D /* GoogleService-Info.plist */; };
 		5D8D3E4829B7198500E59D4D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5D8D3E4729B7198500E59D4D /* FirebaseAuth */; };
 		5D8D3E4A29B7198500E59D4D /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5D8D3E4929B7198500E59D4D /* FirebaseAuthCombine-Community */; };
+		62F6FA531D5C9696D776AC15 /* Pods_WiCSE_Shadowing_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05414BC7AC922ABFC9812474 /* Pods_WiCSE_Shadowing_ProjectTests.framework */; };
+		6A8C8C8197434217C7B6D70F /* Pods_WiCSE_Shadowing_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784C3F8F24D47C90CB167453 /* Pods_WiCSE_Shadowing_Project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		007421C8213AA64B0394134E /* Pods-WiCSE Shadowing Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiCSE Shadowing Project.debug.xcconfig"; path = "Target Support Files/Pods-WiCSE Shadowing Project/Pods-WiCSE Shadowing Project.debug.xcconfig"; sourceTree = "<group>"; };
+		05414BC7AC922ABFC9812474 /* Pods_WiCSE_Shadowing_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiCSE_Shadowing_ProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1957E9BD1933619057D287B8 /* Pods_WiCSE_Shadowing_Project_WiCSE_Shadowing_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiCSE_Shadowing_Project_WiCSE_Shadowing_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CB719A79A5BE995AC75958 /* Pods-WiCSE Shadowing ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiCSE Shadowing ProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-WiCSE Shadowing ProjectTests/Pods-WiCSE Shadowing ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		442B2E2429B7EED40058935F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D8D3E0B29B712D800E59D4D /* WiCSE Shadowing Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WiCSE Shadowing Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8D3E0E29B712D800E59D4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +66,11 @@
 		5D8D3E3F29B7136600E59D4D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5D8D3E4029B7136600E59D4D /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		5D8D3E4329B713BF00E59D4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6AFAD41B89BA21BA3BA68022 /* Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests/Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		784C3F8F24D47C90CB167453 /* Pods_WiCSE_Shadowing_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiCSE_Shadowing_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59043FFD7C730FAAC136FAA /* Pods-WiCSE Shadowing ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiCSE Shadowing ProjectTests.release.xcconfig"; path = "Target Support Files/Pods-WiCSE Shadowing ProjectTests/Pods-WiCSE Shadowing ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		B025DC91267F52157A545A43 /* Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests/Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E8AAAD4856243595E0B20E91 /* Pods-WiCSE Shadowing Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiCSE Shadowing Project.release.xcconfig"; path = "Target Support Files/Pods-WiCSE Shadowing Project/Pods-WiCSE Shadowing Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 				5D8D3E4A29B7198500E59D4D /* FirebaseAuthCombine-Community in Frameworks */,
 				442B2E1F29B7E50D0058935F /* FirebaseFirestore in Frameworks */,
 				442B2E2129B7E53E0058935F /* FirebaseFirestoreSwift in Frameworks */,
+				6A8C8C8197434217C7B6D70F /* Pods_WiCSE_Shadowing_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F6FA531D5C9696D776AC15 /* Pods_WiCSE_Shadowing_ProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336A2DCF0C4E639D28F95F79 /* Pods_WiCSE_Shadowing_Project_WiCSE_Shadowing_ProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +113,7 @@
 				5D8D3E2E29B712D900E59D4D /* WiCSE Shadowing ProjectUITests */,
 				5D8D3E0C29B712D800E59D4D /* Products */,
 				5D8D3E4629B7197100E59D4D /* Frameworks */,
+				B381EE689D9D51646B6057F5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,8 +172,25 @@
 		5D8D3E4629B7197100E59D4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				784C3F8F24D47C90CB167453 /* Pods_WiCSE_Shadowing_Project.framework */,
+				1957E9BD1933619057D287B8 /* Pods_WiCSE_Shadowing_Project_WiCSE_Shadowing_ProjectUITests.framework */,
+				05414BC7AC922ABFC9812474 /* Pods_WiCSE_Shadowing_ProjectTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B381EE689D9D51646B6057F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				007421C8213AA64B0394134E /* Pods-WiCSE Shadowing Project.debug.xcconfig */,
+				E8AAAD4856243595E0B20E91 /* Pods-WiCSE Shadowing Project.release.xcconfig */,
+				6AFAD41B89BA21BA3BA68022 /* Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests.debug.xcconfig */,
+				B025DC91267F52157A545A43 /* Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests.release.xcconfig */,
+				21CB719A79A5BE995AC75958 /* Pods-WiCSE Shadowing ProjectTests.debug.xcconfig */,
+				A59043FFD7C730FAAC136FAA /* Pods-WiCSE Shadowing ProjectTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D8D3E3529B712D900E59D4D /* Build configuration list for PBXNativeTarget "WiCSE Shadowing Project" */;
 			buildPhases = (
+				5FD451255FD7A4879A67BED4 /* [CP] Check Pods Manifest.lock */,
 				5D8D3E0729B712D800E59D4D /* Sources */,
 				5D8D3E0829B712D800E59D4D /* Frameworks */,
 				5D8D3E0929B712D800E59D4D /* Resources */,
+				03FB5C7A2BF1447FB22D6574 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D8D3E3829B712D900E59D4D /* Build configuration list for PBXNativeTarget "WiCSE Shadowing ProjectTests" */;
 			buildPhases = (
+				0CD507D1037195B38DD365B8 /* [CP] Check Pods Manifest.lock */,
 				5D8D3E1D29B712D900E59D4D /* Sources */,
 				5D8D3E1E29B712D900E59D4D /* Frameworks */,
 				5D8D3E1F29B712D900E59D4D /* Resources */,
@@ -208,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D8D3E3B29B712D900E59D4D /* Build configuration list for PBXNativeTarget "WiCSE Shadowing ProjectUITests" */;
 			buildPhases = (
+				B7DC032FF59CBA6B51DDC218 /* [CP] Check Pods Manifest.lock */,
 				5D8D3E2729B712D900E59D4D /* Sources */,
 				5D8D3E2829B712D900E59D4D /* Frameworks */,
 				5D8D3E2929B712D900E59D4D /* Resources */,
+				2A0AC5214C68AC06F0633204 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,6 +333,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03FB5C7A2BF1447FB22D6574 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiCSE Shadowing Project/Pods-WiCSE Shadowing Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiCSE Shadowing Project/Pods-WiCSE Shadowing Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WiCSE Shadowing Project/Pods-WiCSE Shadowing Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0CD507D1037195B38DD365B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiCSE Shadowing ProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A0AC5214C68AC06F0633204 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests/Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests/Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests/Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FD451255FD7A4879A67BED4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiCSE Shadowing Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7DC032FF59CBA6B51DDC218 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D8D3E0729B712D800E59D4D /* Sources */ = {
@@ -477,6 +618,7 @@
 		};
 		5D8D3E3629B712D900E59D4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 007421C8213AA64B0394134E /* Pods-WiCSE Shadowing Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -504,6 +646,7 @@
 		};
 		5D8D3E3729B712D900E59D4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8AAAD4856243595E0B20E91 /* Pods-WiCSE Shadowing Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -531,6 +674,7 @@
 		};
 		5D8D3E3929B712D900E59D4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21CB719A79A5BE995AC75958 /* Pods-WiCSE Shadowing ProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -550,6 +694,7 @@
 		};
 		5D8D3E3A29B712D900E59D4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59043FFD7C730FAAC136FAA /* Pods-WiCSE Shadowing ProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -569,6 +714,7 @@
 		};
 		5D8D3E3C29B712D900E59D4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AFAD41B89BA21BA3BA68022 /* Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +732,7 @@
 		};
 		5D8D3E3D29B712D900E59D4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B025DC91267F52157A545A43 /* Pods-WiCSE Shadowing Project-WiCSE Shadowing ProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

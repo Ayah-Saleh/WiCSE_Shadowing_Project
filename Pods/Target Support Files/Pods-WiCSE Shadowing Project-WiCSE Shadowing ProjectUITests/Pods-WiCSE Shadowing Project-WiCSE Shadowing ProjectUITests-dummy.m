@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_WiCSE_Shadowing_Project_WiCSE_Shadowing_ProjectUITests : NSObject
+@end
+@implementation PodsDummy_Pods_WiCSE_Shadowing_Project_WiCSE_Shadowing_ProjectUITests
+@end
