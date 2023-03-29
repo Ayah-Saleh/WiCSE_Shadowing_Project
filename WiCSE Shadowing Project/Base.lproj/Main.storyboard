@@ -145,9 +145,9 @@
         <!--Upload Workouts-->
         <scene sceneID="63N-9c-N7f">
             <objects>
-                <viewController id="Et1-I1-eFS" customClass="ViewController" customModule="WiCSE_Shadowing_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Et1-I1-eFS" customClass="uploadWorkoutViewController" customModule="WiCSE_Shadowing_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Ah-F3-9t3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ioc-YD-wkl">
@@ -159,7 +159,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJd-Oa-oNg">
-                                <rect key="frame" x="23" y="20" width="346" height="95"/>
+                                <rect key="frame" x="23" y="59" width="346" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="upload your">
@@ -173,7 +173,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7C-E2-wMr">
-                                <rect key="frame" x="23" y="59" width="346" height="95"/>
+                                <rect key="frame" x="23" y="98" width="346" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="own workout">
@@ -187,7 +187,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cv2-Pw-eFr">
-                                <rect key="frame" x="23" y="664" width="332" height="52"/>
+                                <rect key="frame" x="23" y="703" width="332" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -209,7 +209,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Write your step by step description..." minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="tOq-RD-VcQ">
-                                <rect key="frame" x="23" y="622" width="332" height="34"/>
+                                <rect key="frame" x="23" y="661" width="332" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.3616193352" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -217,114 +217,102 @@
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HWX-79-ByS">
-                                <rect key="frame" x="23" y="255" width="331" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HWX-79-ByS">
+                                <rect key="frame" x="264" y="585" width="91" height="68"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="🏋️‍♀️ name" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OJZ-Jv-D5a">
-                                <rect key="frame" x="23" y="149" width="332" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="🏋️‍♀️ name" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OJZ-Jv-D5a">
+                                <rect key="frame" x="23" y="188" width="332" height="34"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ztD-OS-OrK">
-                                <rect key="frame" x="23" y="191" width="76" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.3616193352" alpha="1" colorSpace="calibratedRGB"/>
-                                <menu key="menu" id="YpE-op-wF5">
-                                    <children>
-                                        <command title="Item 1" id="4E6-G5-YDD"/>
-                                        <command title="Item 2" id="fUg-rn-VWH"/>
-                                    </children>
-                                </menu>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="goal">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                <font key="NSFont" size="16" name="Optima-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1z-uf-5VB">
-                                <rect key="frame" x="106" y="191" width="76" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.3616193352" alpha="1" colorSpace="calibratedRGB"/>
-                                <menu key="menu" id="1ET-Jw-99V">
-                                    <children>
-                                        <command title="Item 1" id="Yj3-Jy-Wqi"/>
-                                        <command title="Item 2" id="912-Zg-Y6W"/>
-                                    </children>
-                                </menu>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="type">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                <font key="NSFont" size="16" name="Optima-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jjm-D9-XPu">
-                                <rect key="frame" x="190" y="191" width="76" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.3616193352" alpha="1" colorSpace="calibratedRGB"/>
-                                <menu key="menu" id="9zx-4l-Pr0">
-                                    <children>
-                                        <command title="Item 1" id="XdE-UG-jQH"/>
-                                        <command title="Item 2" id="IqJ-mY-ktd"/>
-                                    </children>
-                                </menu>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="muscle group">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                <font key="NSFont" size="16" name="Optima-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oq5-Qo-6Fl">
-                                <rect key="frame" x="274" y="191" width="76" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.3616193352" alpha="1" colorSpace="calibratedRGB"/>
-                                <menu key="menu" id="SdX-Jo-IgF">
-                                    <children>
-                                        <command title="Item 1" id="Yff-fW-4JK"/>
-                                        <command title="Item 2" id="dTa-yU-krS"/>
-                                    </children>
-                                </menu>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="skill level">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                <font key="NSFont" size="16" name="Optima-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HnI-X9-CzA">
+                                <rect key="frame" x="25" y="230" width="113.66666666666669" height="132"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhv-6j-yvq">
+                                        <rect key="frame" x="0.0" y="0.0" width="113.66666666666667" height="33"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="goal">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="16" name="Optima-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseBackgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsn-So-vEv">
+                                        <rect key="frame" x="0.0" y="33" width="113.66666666666667" height="33"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="build muscle">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="16" name="Optima-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQm-sC-EMP">
+                                        <rect key="frame" x="0.0" y="66" width="113.66666666666667" height="33"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="tone">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="16" name="Optima-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwP-yh-zKf">
+                                        <rect key="frame" x="0.0" y="99" width="113.66666666666667" height="33"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="strength train">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="16" name="Optima-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="48U-R5-BhM"/>
+                                    <constraint firstAttribute="width" constant="113.67" id="Vca-oU-HYo"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hUG-H0-IXZ"/>
                         <color key="backgroundColor" red="0.6705882353" green="0.90196078430000004" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="HnI-X9-CzA" firstAttribute="leading" secondItem="hUG-H0-IXZ" secondAttribute="leading" constant="25" id="JSp-N1-CaX"/>
+                            <constraint firstItem="HWX-79-ByS" firstAttribute="top" secondItem="OJZ-Jv-D5a" secondAttribute="bottom" constant="130" id="dIY-gN-dyM"/>
+                            <constraint firstItem="HnI-X9-CzA" firstAttribute="top" secondItem="OJZ-Jv-D5a" secondAttribute="bottom" constant="130" id="z6M-sb-2Ta"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Upload Workouts" id="Rmc-JG-QNw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FtH-QJ-XsS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3432.8244274809158" y="283.80281690140845"/>
+            <point key="canvasLocation" x="3433" y="284"/>
         </scene>
         <!--Login or Create Account-->
         <scene sceneID="qyD-1c-DKe">
@@ -643,7 +631,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signUpClicked:" destination="nQr-6J-PP6" eventType="touchUpInside" id="YGE-Zx-ywC"/>
-                                    <segue destination="Et1-I1-eFS" kind="show" id="r31-ey-OcZ"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DWf-aq-Xel">
@@ -876,7 +863,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signUpClicked:" destination="nQr-6J-PP6" eventType="touchUpInside" id="IrP-js-874"/>
-                                    <segue destination="Et1-I1-eFS" kind="show" id="vcw-ft-y5F"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -933,13 +919,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OhC-g0-Xgl" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4190.0763358778622" y="-54.225352112676056"/>
+            <point key="canvasLocation" x="4323" y="-54"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="TLp-ol-tCp"/>
         <segue reference="kaz-25-5bJ"/>
-        <segue reference="vcw-ft-y5F"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Untitled__2_-removebg-preview.png" width="553" height="452"/>

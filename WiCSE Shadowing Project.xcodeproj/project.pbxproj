@@ -11,6 +11,7 @@
 		442B2E1F29B7E50D0058935F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 442B2E1E29B7E50D0058935F /* FirebaseFirestore */; };
 		442B2E2129B7E53E0058935F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 442B2E2029B7E53E0058935F /* FirebaseFirestoreSwift */; };
 		442B2E2529B7EED40058935F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B2E2429B7EED40058935F /* ViewController.swift */; };
+		446FC7A629D3FD0200CAD351 /* uploadWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446FC7A529D3FD0200CAD351 /* uploadWorkoutViewController.swift */; };
 		5D8D3E0F29B712D800E59D4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D3E0E29B712D800E59D4D /* AppDelegate.swift */; };
 		5D8D3E1129B712D800E59D4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D3E1029B712D800E59D4D /* SceneDelegate.swift */; };
 		5D8D3E1629B712D800E59D4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8D3E1429B712D800E59D4D /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		1957E9BD1933619057D287B8 /* Pods_WiCSE_Shadowing_Project_WiCSE_Shadowing_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiCSE_Shadowing_Project_WiCSE_Shadowing_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CB719A79A5BE995AC75958 /* Pods-WiCSE Shadowing ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiCSE Shadowing ProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-WiCSE Shadowing ProjectTests/Pods-WiCSE Shadowing ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		442B2E2429B7EED40058935F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		446FC7A529D3FD0200CAD351 /* uploadWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadWorkoutViewController.swift; sourceTree = "<group>"; };
 		5D8D3E0B29B712D800E59D4D /* WiCSE Shadowing Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WiCSE Shadowing Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8D3E0E29B712D800E59D4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D8D3E1029B712D800E59D4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		446FC7A729D4010800CAD351 /* DropDownCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DropDownCells;
+			sourceTree = "<group>";
+		};
 		5D8D3E0229B712D800E59D4D = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +139,7 @@
 		5D8D3E0D29B712D800E59D4D /* WiCSE Shadowing Project */ = {
 			isa = PBXGroup;
 			children = (
+				446FC7A729D4010800CAD351 /* DropDownCells */,
 				5D8D3E0E29B712D800E59D4D /* AppDelegate.swift */,
 				5D8D3E1029B712D800E59D4D /* SceneDelegate.swift */,
 				5D8D3E3E29B7135C00E59D4D /* ViewControllers */,
@@ -165,6 +175,7 @@
 				442B2E2429B7EED40058935F /* ViewController.swift */,
 				5D8D3E4029B7136600E59D4D /* CreateAccountViewController.swift */,
 				5D8D3E3F29B7136600E59D4D /* LoginViewController.swift */,
+				446FC7A529D3FD0200CAD351 /* uploadWorkoutViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -189,7 +200,6 @@
 				21CB719A79A5BE995AC75958 /* Pods-WiCSE Shadowing ProjectTests.debug.xcconfig */,
 				A59043FFD7C730FAAC136FAA /* Pods-WiCSE Shadowing ProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -443,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				442B2E2529B7EED40058935F /* ViewController.swift in Sources */,
+				446FC7A629D3FD0200CAD351 /* uploadWorkoutViewController.swift in Sources */,
 				5D8D3E4229B7136600E59D4D /* CreateAccountViewController.swift in Sources */,
 				5D8D3E4129B7136600E59D4D /* LoginViewController.swift in Sources */,
 				5D8D3E0F29B712D800E59D4D /* AppDelegate.swift in Sources */,
