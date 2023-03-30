@@ -23,11 +23,55 @@ class uploadWorkoutViewController: UIViewController {
     @IBOutlet weak var workoutDescription: UITextField!
     @IBOutlet weak var submitBtn: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var skillStackView: UIStackView!
+    @IBOutlet weak var goalStackView: UIStackView!
+    @IBOutlet weak var muscleStackView: UIStackView!
+    @IBOutlet weak var typeStackView: UIStackView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setUpElements()
+        skillStackView.isHidden = true
+        goalStackView.isHidden = true
+        muscleStackView.isHidden = true
+        typeStackView.isHidden = true
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        let tappedLocation = sender.location(in: view)
+
+        // Check if the tap occurred on any of the buttons that show the stack views
+        if userGoal.frame.contains(tappedLocation) {
+            toggleVisibility(of: goalStackView)
+        } else if userMuscleGroup.frame.contains(tappedLocation) {
+            toggleVisibility(of: muscleStackView)
+        } else if userSkill.frame.contains(tappedLocation) {
+            toggleVisibility(of: skillStackView)
+        } else if userWorkoutType.frame.contains(tappedLocation) {
+            toggleVisibility(of: typeStackView)
+        } else {
+            hideAllStackViews()
+        }
+    }
+
+    private func toggleVisibility(of stackView: UIStackView) {
+        UIView.animate(withDuration: 0.3) {
+            stackView.isHidden = !stackView.isHidden
+        }
+    }
+
+    private func hideAllStackViews() {
+        UIView.animate(withDuration: 0.3) { [self] in
+            self.skillStackView.isHidden = true
+            self.goalStackView.isHidden = true
+            self.muscleStackView.isHidden = true
+            self.typeStackView.isHidden = true
+        }
     }
     
     // check the fields and validate that the data is correct. if correct, returns nil, otherwise, returns error message
@@ -104,28 +148,28 @@ class uploadWorkoutViewController: UIViewController {
         
         let userGoalDropDown = DropDown()
         userGoalDropDown.anchorView = userGoal
-        userGoalDropDown.dataSource = ["Build Muscle", "Tone", "Strength Train"]
+        userGoalDropDown.dataSource = ["build muscle", "tone", "strength train"]
         userGoalDropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             self.userGoal.setTitle(item, for: .normal)
         }
         
         let muscleGroupDropDown = DropDown()
         muscleGroupDropDown.anchorView = userMuscleGroup
-        muscleGroupDropDown.dataSource = ["Chest", "Back", "Legs", "Shoulders", "Arms", "Abs", "Glutes", "Calves"]
+        muscleGroupDropDown.dataSource = ["chest", "back", "legs", "shoulders", "arms", "abs", "glutes", "calves"]
         muscleGroupDropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             self.userMuscleGroup.setTitle(item, for: .normal)
         }
         
         let skillDropDown = DropDown()
         skillDropDown.anchorView = userSkill
-        skillDropDown.dataSource = ["Beginner", "Intermediate", "Expert"]
+        skillDropDown.dataSource = ["beginner", "intermediate", "expert"]
         skillDropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             self.userSkill.setTitle(item, for: .normal)
         }
         
         let workoutTypeDropDown = DropDown()
         workoutTypeDropDown.anchorView = userWorkoutType
-        workoutTypeDropDown.dataSource = ["Plyometrics", "Powerlifting", "Strength", "Stretching", "Strongman"]
+        workoutTypeDropDown.dataSource = ["plyometrics", "power lifting", "strength", "stretch"]
         workoutTypeDropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             self.userSkill.setTitle(item, for: .normal)
         }
