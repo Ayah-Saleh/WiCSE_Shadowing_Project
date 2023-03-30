@@ -7,6 +7,7 @@ target 'WiCSE Shadowing Project' do
 
   # Pods for WiCSE Shadowing Project
 pod 'DropDown'
+pod 'Popover'
 
   target 'WiCSE Shadowing ProjectTests' do
     inherit! :search_paths

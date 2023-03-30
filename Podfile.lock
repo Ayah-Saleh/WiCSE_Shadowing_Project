@@ -1,16 +1,20 @@
 PODS:
   - DropDown (2.3.13)
+  - Popover (1.3.0)
 
 DEPENDENCIES:
   - DropDown
+  - Popover
 
 SPEC REPOS:
   trunk:
     - DropDown
+    - Popover
 
 SPEC CHECKSUMS:
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  Popover: 10e1d9528f81d9504df984b7b3f491292bc1822d
 
-PODFILE CHECKSUM: c20f55f1dabcb0a088cbe43fac19b48f843fbcaf
+PODFILE CHECKSUM: 43019eede5edf81c56fb20156e0f161ef927a883
 
 COCOAPODS: 1.12.0
