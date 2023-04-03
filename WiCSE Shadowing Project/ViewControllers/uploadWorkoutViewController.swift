@@ -40,6 +40,7 @@ class uploadWorkoutViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setUpElements()
+        // drop down animation
         skillCollection.forEach{ (btn) in
             btn.isHidden = true
             btn.alpha = 0
