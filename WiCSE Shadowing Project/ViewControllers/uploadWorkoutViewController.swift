@@ -84,12 +84,7 @@ class uploadWorkoutViewController: UIViewController {
         }
     }
     
-    @IBAction func selectedGoal(_ sender: UIButton) {
-        if let btnLabel = sender.titleLabel?.text{
-            print(btnLabel)
-        }
-    }
-
+    
     @IBAction func musclePressed(_ sender: UIButton) {
         muscleCollection.forEach{ (btn) in
             UIView.animate(withDuration: 0.7){
@@ -97,6 +92,12 @@ class uploadWorkoutViewController: UIViewController {
                 btn.alpha = btn.alpha == 0 ? 1 : 0
                 btn.layoutIfNeeded()
             }
+        }
+    }
+
+    @IBAction func selectedGoal(_ sender: UIButton) {
+        if let btnLabel = sender.titleLabel?.text{ //wrong connection switch w one belwo
+            print(btnLabel)
         }
     }
     
