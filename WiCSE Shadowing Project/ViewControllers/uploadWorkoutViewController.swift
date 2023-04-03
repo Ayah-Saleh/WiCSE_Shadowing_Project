@@ -34,6 +34,8 @@ class uploadWorkoutViewController: UIViewController {
     @IBOutlet var muscleCollection: [UIButton]! // not all muscle buttons are connected
     @IBOutlet var typeCollection: [UIButton]!
     
+    let db = Firestore.firestore()
+    let user = Auth.auth().currentUser
     
     
     override func viewDidLoad() {
@@ -163,22 +165,38 @@ class uploadWorkoutViewController: UIViewController {
                   let user_skill = userSkill.titleLabel?.text,
                   let user_goal = userGoal.titleLabel?.text,
                   let workout_name = workoutName.text?.trimmingCharacters(in: .whitespacesAndNewlines),
-                  let workout_description = workoutDescription.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {
+                  let workout_description = workoutDescription.text?.trimmingCharacters(in: .whitespacesAndNewlines),
+                  let uid = user?.uid else {
                 showError("Invalid data")
                 return
             }
             
-            if let user = user {
-                // upload data to Firebase Realtime Database
-                ref.child("Users").child(user.uid).child("Workouts").childByAutoId().setValue(["goal": user_goal, "muscle_group": muscle_group, "name": workout_name, "skill_level": user_skill, "type": workout_type, "workout_description": workout_description])
-                
-                // upload data to Firestore
-                let db = Firestore.firestore()
-                db.collection("Workouts").addDocument(data: ["goal": user_goal, "muscle_group": muscle_group, "name": workout_name, "skill_level": user_skill, "type": workout_type, "workout_description": workout_description, "uid": user.uid])
-                
-                transitionToExplore()
-            } else {
-                showError("User not logged in.")
+            // upload data to Firebase Realtime Database
+            let ref = Database.database().reference()
+            ref.child("Users").child(uid).child("Workouts").childByAutoId().setValue([
+                "goal": user_goal,
+                "muscle_group": muscle_group,
+                "name": workout_name,
+                "skill_level": user_skill,
+                "type": workout_type,
+                "workout_description": workout_description
+            ])
+            
+            // upload data to Firestore
+            db.collection("Workouts").addDocument(data: [
+                "goal": user_goal,
+                "muscle_group": muscle_group,
+                "name": workout_name,
+                "skill_level": user_skill,
+                "type": workout_type,
+                "workout_description": workout_description,
+                "uid": uid
+            ]) { error in
+                if let error = error {
+                   showError("Error saving workout: \(error.localizedDescription)")
+                } else {
+                    transitionToExplore()
+                }
             }
         }
         func transitionToExplore(){
