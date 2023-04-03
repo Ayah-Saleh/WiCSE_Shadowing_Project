@@ -8,14 +8,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "39299479-47DB-4455-AA69-C8EA213EDDB0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WiCSE Shadowing Project/ViewControllers/uploadWorkoutViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
             landmarkName = "setUpElements()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,9 +30,9 @@
             filePath = "WiCSE Shadowing Project/ViewControllers/uploadWorkoutViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "handleTap(_:)"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "validateFields()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

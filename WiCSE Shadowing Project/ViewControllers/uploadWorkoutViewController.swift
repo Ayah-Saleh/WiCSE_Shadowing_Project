@@ -14,7 +14,6 @@ import FirebaseDatabase
 
 class uploadWorkoutViewController: UIViewController {
     
-    
     @IBOutlet weak var workoutName: UITextField!
     @IBOutlet weak var userGoal: UIButton!
     @IBOutlet weak var userMuscleGroup: UIButton!
@@ -29,48 +28,97 @@ class uploadWorkoutViewController: UIViewController {
     @IBOutlet weak var typeStackView: UIStackView!
     
     
+    
+    @IBOutlet var skillCollection: [UIButton]!
+    @IBOutlet var goalCollection: [UIButton]! //not all goal buttons are connected
+    @IBOutlet var muscleCollection: [UIButton]! // not all muscle buttons are connected
+    @IBOutlet var typeCollection: [UIButton]!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setUpElements()
-        skillStackView.isHidden = true
-        goalStackView.isHidden = true
-        muscleStackView.isHidden = true
-        typeStackView.isHidden = true
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-        view.addGestureRecognizer(tapGesture)
+        skillCollection.forEach{ (btn) in
+            btn.isHidden = true
+            btn.alpha = 0
+        }
+        goalCollection.forEach{ (btn) in
+            btn.isHidden = true
+            btn.alpha = 0
+        }
+        muscleCollection.forEach{ (btn) in
+            btn.isHidden = true
+            btn.alpha = 0
+        }
+        typeCollection.forEach{ (btn) in
+            btn.isHidden = true
+            btn.alpha = 0
+        }
     }
     
-    @objc func handleTap(_ sender: UITapGestureRecognizer) {
-        let tappedLocation = sender.location(in: view)
-
-        // Check if the tap occurred on any of the buttons that show the stack views
-        if userGoal.frame.contains(tappedLocation) {
-            toggleVisibility(of: goalStackView)
-        } else if userMuscleGroup.frame.contains(tappedLocation) {
-            toggleVisibility(of: muscleStackView)
-        } else if userSkill.frame.contains(tappedLocation) {
-            toggleVisibility(of: skillStackView)
-        } else if userWorkoutType.frame.contains(tappedLocation) {
-            toggleVisibility(of: typeStackView)
-        } else {
-            hideAllStackViews()
+    @IBAction func skillPressed(_ sender: UIButton) {
+        skillCollection.forEach{ (btn) in
+            UIView.animate(withDuration: 0.7){
+                btn.isHidden = !btn.isHidden
+                btn.alpha = btn.alpha == 0 ? 1 : 0
+                btn.layoutIfNeeded()
+            }
+        }
+    }
+    
+    @IBAction func selectedSkill(_ sender: UIButton) {
+        if let btnLabel = sender.titleLabel?.text{
+            print(btnLabel)
+        }
+    }
+    
+    @IBAction func goalPressed(_ sender: UIButton) {
+        goalCollection.forEach{ (btn) in
+            UIView.animate(withDuration: 0.7){
+                btn.isHidden = !btn.isHidden
+                btn.alpha = btn.alpha == 0 ? 1 : 0
+                btn.layoutIfNeeded()
+            }
+        }
+    }
+    
+    @IBAction func selectedGoal(_ sender: UIButton) {
+        if let btnLabel = sender.titleLabel?.text{
+            print(btnLabel)
         }
     }
 
-    private func toggleVisibility(of stackView: UIStackView) {
-        UIView.animate(withDuration: 0.3) {
-            stackView.isHidden = !stackView.isHidden
+    @IBAction func musclePressed(_ sender: UIButton) {
+        muscleCollection.forEach{ (btn) in
+            UIView.animate(withDuration: 0.7){
+                btn.isHidden = !btn.isHidden
+                btn.alpha = btn.alpha == 0 ? 1 : 0
+                btn.layoutIfNeeded()
+            }
         }
     }
-
-    private func hideAllStackViews() {
-        UIView.animate(withDuration: 0.3) { [self] in
-            self.skillStackView.isHidden = true
-            self.goalStackView.isHidden = true
-            self.muscleStackView.isHidden = true
-            self.typeStackView.isHidden = true
+    
+    @IBAction func selectedMuscle(_ sender: UIButton) {
+        if let btnLabel = sender.titleLabel?.text{
+            print(btnLabel)
+        }
+    }
+    
+    @IBAction func typePressed(_ sender: UIButton) {
+        typeCollection.forEach{ (btn) in
+            UIView.animate(withDuration: 0.7){
+                btn.isHidden = !btn.isHidden
+                btn.alpha = btn.alpha == 0 ? 1 : 0
+                btn.layoutIfNeeded()
+            }
+        }
+    }
+    
+    @IBAction func selectedType(_ sender: UIButton) {
+        if let btnLabel = sender.titleLabel?.text{
+            print(btnLabel)
         }
     }
     

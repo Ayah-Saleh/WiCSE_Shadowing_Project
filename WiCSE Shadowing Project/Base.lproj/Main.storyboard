@@ -255,6 +255,10 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="musclePressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="hZs-m5-Duk"/>
+                                            <action selector="selectedGoal:" destination="Et1-I1-eFS" eventType="touchUpInside" id="kXw-FU-OmD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxM-Ve-WTR">
                                         <rect key="frame" x="0.0" y="32.333333333333336" width="91.333333333333329" height="28.333333333333336"/>
@@ -271,6 +275,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="musclePressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="MFh-8F-1fL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kU-s2-nh7">
                                         <rect key="frame" x="0.0" y="64.666666666666671" width="91.333333333333329" height="28.333333333333329"/>
@@ -287,6 +294,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="musclePressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="GvF-zt-weX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -308,6 +318,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="8L2-vL-g1x"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOW-Jg-DqN">
                                         <rect key="frame" x="0.0" y="32.333333333333336" width="73.666666666666671" height="28.333333333333336"/>
@@ -324,6 +337,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="s7c-h2-gXC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5d-wl-O6C">
                                         <rect key="frame" x="0.0" y="64.666666666666671" width="73.666666666666671" height="28.333333333333329"/>
@@ -340,6 +356,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="nr4-05-uSo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enG-cw-0Bi">
                                         <rect key="frame" x="0.0" y="97" width="73.666666666666671" height="28.333333333333329"/>
@@ -356,6 +375,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="buF-bt-zo9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LM-QJ-7Gh">
                                         <rect key="frame" x="0.0" y="129.33333333333334" width="73.666666666666671" height="28.333333333333343"/>
@@ -372,6 +394,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="gPb-Dv-4ew"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcu-cX-5w7">
                                         <rect key="frame" x="0.0" y="161.66666666666666" width="73.666666666666671" height="28.333333333333343"/>
@@ -388,6 +413,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="pqX-gw-FCe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjN-eP-cBf">
                                         <rect key="frame" x="0.0" y="194" width="73.666666666666671" height="28.333333333333343"/>
@@ -404,6 +432,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="hKJ-qd-B9O"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyp-8M-2Sp">
                                         <rect key="frame" x="0.0" y="226.33333333333334" width="73.666666666666671" height="28.333333333333343"/>
@@ -420,6 +451,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="lq5-yy-Ym1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -441,6 +475,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedType:" destination="Et1-I1-eFS" eventType="touchUpInside" id="YSO-26-BGV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F49-Bx-9c5">
                                         <rect key="frame" x="0.0" y="32.333333333333336" width="89.333333333333329" height="28.333333333333336"/>
@@ -457,6 +494,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedType:" destination="Et1-I1-eFS" eventType="touchUpInside" id="OO0-TL-ikL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNN-sE-Hso">
                                         <rect key="frame" x="0.0" y="64.666666666666671" width="89.333333333333329" height="28.333333333333329"/>
@@ -473,6 +513,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedType:" destination="Et1-I1-eFS" eventType="touchUpInside" id="cRp-vQ-pSE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mz9-YX-phN">
                                         <rect key="frame" x="0.0" y="97" width="89.333333333333329" height="28.333333333333329"/>
@@ -489,6 +532,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedType:" destination="Et1-I1-eFS" eventType="touchUpInside" id="Sjz-2r-Whv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -510,6 +556,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedSkill:" destination="Et1-I1-eFS" eventType="touchUpInside" id="j0R-tM-vA5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ff9-KH-Gbt">
                                         <rect key="frame" x="0.0" y="32.333333333333336" width="69.666666666666671" height="28.333333333333336"/>
@@ -526,6 +575,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedSkill:" destination="Et1-I1-eFS" eventType="touchUpInside" id="myA-SC-gRx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdw-pV-n3j">
                                         <rect key="frame" x="0.0" y="64.666666666666671" width="69.666666666666671" height="28.333333333333329"/>
@@ -542,6 +594,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedSkill:" destination="Et1-I1-eFS" eventType="touchUpInside" id="4Ex-Wa-gqU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -571,6 +626,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="skillPressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="2Go-S6-0pL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrB-TF-oaz">
                                 <rect key="frame" x="99" y="221" width="91.333333333333329" height="34"/>
@@ -595,6 +653,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="goalPressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="2yi-1K-ZlF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qY7-ya-AjV">
                                 <rect key="frame" x="197" y="221" width="74" height="34"/>
@@ -619,6 +680,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="musclePressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="nYF-d9-2Fe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sS-Rg-cGp">
                                 <rect key="frame" x="280" y="221" width="89.333333333333329" height="34"/>
@@ -643,6 +707,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="typePressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="Qqf-ac-d53"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hUG-H0-IXZ"/>
@@ -666,6 +733,25 @@
                         <outlet property="userWorkoutType" destination="2sS-Rg-cGp" id="nci-Rt-taB"/>
                         <outlet property="workoutDescription" destination="tOq-RD-VcQ" id="7rG-Vy-6w6"/>
                         <outlet property="workoutName" destination="OJZ-Jv-D5a" id="nZ1-4b-xl2"/>
+                        <outletCollection property="skillCollection" destination="ajQ-Ic-Icg" collectionClass="NSMutableArray" id="T2w-aK-5El"/>
+                        <outletCollection property="skillCollection" destination="ff9-KH-Gbt" collectionClass="NSMutableArray" id="toJ-Ym-LEH"/>
+                        <outletCollection property="skillCollection" destination="Hdw-pV-n3j" collectionClass="NSMutableArray" id="0gk-bl-pE5"/>
+                        <outletCollection property="goalCollection" destination="TnF-83-2fe" collectionClass="NSMutableArray" id="0bh-Ma-wwH"/>
+                        <outletCollection property="muscleConnection" destination="HTJ-P4-XgJ" collectionClass="NSMutableArray" id="DMD-ch-Xdw"/>
+                        <outletCollection property="typeCollection" destination="vtu-6X-tYp" collectionClass="NSMutableArray" id="S5H-gT-qB7"/>
+                        <outletCollection property="typeCollection" destination="F49-Bx-9c5" collectionClass="NSMutableArray" id="a0J-m2-IUP"/>
+                        <outletCollection property="typeCollection" destination="qNN-sE-Hso" collectionClass="NSMutableArray" id="BHG-K4-WLm"/>
+                        <outletCollection property="typeCollection" destination="Mz9-YX-phN" collectionClass="NSMutableArray" id="Roh-HD-FVX"/>
+                        <outletCollection property="muscleCollection" destination="bOW-Jg-DqN" collectionClass="NSMutableArray" id="qIk-iT-G2d"/>
+                        <outletCollection property="muscleCollection" destination="HTJ-P4-XgJ" collectionClass="NSMutableArray" id="uss-f0-cve"/>
+                        <outletCollection property="muscleCollection" destination="K5d-wl-O6C" collectionClass="NSMutableArray" id="yuj-bx-DDa"/>
+                        <outletCollection property="muscleCollection" destination="enG-cw-0Bi" collectionClass="NSMutableArray" id="q7T-Ec-WCK"/>
+                        <outletCollection property="muscleCollection" destination="6LM-QJ-7Gh" collectionClass="NSMutableArray" id="bAm-EC-gXr"/>
+                        <outletCollection property="muscleCollection" destination="Bcu-cX-5w7" collectionClass="NSMutableArray" id="h6a-Za-nIS"/>
+                        <outletCollection property="muscleCollection" destination="ZjN-eP-cBf" collectionClass="NSMutableArray" id="kkw-j6-pHc"/>
+                        <outletCollection property="muscleCollection" destination="Kyp-8M-2Sp" collectionClass="NSMutableArray" id="hln-Vg-vab"/>
+                        <outletCollection property="goalCollection" destination="RxM-Ve-WTR" collectionClass="NSMutableArray" id="WtE-WW-BcM"/>
+                        <outletCollection property="goalCollection" destination="6kU-s2-nh7" collectionClass="NSMutableArray" id="QZx-Ig-u2n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FtH-QJ-XsS" sceneMemberID="firstResponder"/>
