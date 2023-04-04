@@ -256,7 +256,6 @@
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="musclePressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="hZs-m5-Duk"/>
                                             <action selector="selectedGoal:" destination="Et1-I1-eFS" eventType="touchUpInside" id="kXw-FU-OmD"/>
                                         </connections>
                                     </button>
@@ -276,7 +275,7 @@
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="musclePressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="MFh-8F-1fL"/>
+                                            <action selector="selectedGoal:" destination="Et1-I1-eFS" eventType="touchUpInside" id="O1M-nk-yDt"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kU-s2-nh7">
@@ -295,7 +294,7 @@
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="musclePressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="GvF-zt-weX"/>
+                                            <action selector="selectedGoal:" destination="Et1-I1-eFS" eventType="touchUpInside" id="pbg-RC-3XI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -722,11 +721,7 @@
                     <navigationItem key="navigationItem" title="Upload Workouts" id="Rmc-JG-QNw"/>
                     <connections>
                         <outlet property="errorLabel" destination="a92-7Q-VHM" id="PRC-VR-ZXY"/>
-                        <outlet property="goalStackView" destination="5EV-TP-wlS" id="xje-7c-6UC"/>
-                        <outlet property="muscleStackView" destination="5EV-TP-wlS" id="j4a-fL-RVU"/>
-                        <outlet property="skillStackView" destination="1Pj-I8-2Ua" id="1wJ-Ek-aPM"/>
                         <outlet property="submitBtn" destination="cv2-Pw-eFr" id="eQF-40-K5i"/>
-                        <outlet property="typeStackView" destination="E5n-9g-gjm" id="6qs-Ae-sA5"/>
                         <outlet property="userGoal" destination="PrB-TF-oaz" id="2ub-Vi-iC5"/>
                         <outlet property="userMuscleGroup" destination="qY7-ya-AjV" id="JpQ-Hz-T9n"/>
                         <outlet property="userSkill" destination="2p7-Ne-0fq" id="lkl-Nc-NRq"/>
@@ -737,7 +732,6 @@
                         <outletCollection property="skillCollection" destination="ff9-KH-Gbt" collectionClass="NSMutableArray" id="toJ-Ym-LEH"/>
                         <outletCollection property="skillCollection" destination="Hdw-pV-n3j" collectionClass="NSMutableArray" id="0gk-bl-pE5"/>
                         <outletCollection property="goalCollection" destination="TnF-83-2fe" collectionClass="NSMutableArray" id="0bh-Ma-wwH"/>
-                        <outletCollection property="muscleConnection" destination="HTJ-P4-XgJ" collectionClass="NSMutableArray" id="DMD-ch-Xdw"/>
                         <outletCollection property="typeCollection" destination="vtu-6X-tYp" collectionClass="NSMutableArray" id="S5H-gT-qB7"/>
                         <outletCollection property="typeCollection" destination="F49-Bx-9c5" collectionClass="NSMutableArray" id="a0J-m2-IUP"/>
                         <outletCollection property="typeCollection" destination="qNN-sE-Hso" collectionClass="NSMutableArray" id="BHG-K4-WLm"/>
@@ -1048,8 +1042,16 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DWf-aq-Xel">
+                                <rect key="frame" x="411" y="273" width="91" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IFK-xf-uPy">
+                                <rect key="frame" x="303" y="25" width="58" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s92-WY-0WI">
-                                <rect key="frame" x="31" y="715" width="332" height="52"/>
+                                <rect key="frame" x="31" y="686" width="332" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.28235294119999998" green="0.6588235294" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
@@ -1078,20 +1080,12 @@
                                     <segue destination="Et1-I1-eFS" kind="show" identifier="dashToUpload" id="55D-d3-b8I"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DWf-aq-Xel">
-                                <rect key="frame" x="411" y="273" width="91" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JED-f3-XGa">
-                                <rect key="frame" x="30" y="520" width="331" height="202"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IFK-xf-uPy">
-                                <rect key="frame" x="303" y="25" width="58" height="49"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uploadProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="JED-f3-XGa">
+                                <rect key="frame" x="30" y="491" width="331" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9h-26-0w2">
-                                <rect key="frame" x="31" y="415" width="332" height="52"/>
+                                <rect key="frame" x="31" y="409" width="332" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.28235294119999998" green="0.6588235294" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
@@ -1120,8 +1114,8 @@
                                     <segue destination="adt-Lw-PZI" kind="show" id="Ahg-6Q-U8Y"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yUY-1t-H5d">
-                                <rect key="frame" x="31" y="220" width="332" height="202"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exploreProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="yUY-1t-H5d">
+                                <rect key="frame" x="31" y="214" width="332" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1375,6 +1369,8 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Untitled__2_-removebg-preview.png" width="553" height="452"/>
+        <image name="exploreProfileImage" width="1822" height="752"/>
         <image name="greenSpa.png" width="553" height="452"/>
+        <image name="uploadProfileImage" width="1188" height="494"/>
     </resources>
 </document>

@@ -22,11 +22,6 @@ class uploadWorkoutViewController: UIViewController {
     @IBOutlet weak var workoutDescription: UITextField!
     @IBOutlet weak var submitBtn: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
-    @IBOutlet weak var skillStackView: UIStackView!
-    @IBOutlet weak var goalStackView: UIStackView!
-    @IBOutlet weak var muscleStackView: UIStackView!
-    @IBOutlet weak var typeStackView: UIStackView!
-    
     
     
     @IBOutlet var skillCollection: [UIButton]!
@@ -153,7 +148,7 @@ class uploadWorkoutViewController: UIViewController {
     
     @IBAction func submitClicked(_ sender: Any) {
         let error = validateFields()
-        let ref = Database.database().reference()
+       // let ref = Database.database().reference()
         let user = Auth.auth().currentUser
         if error != nil{
             showError("Oops! Looks like you forgot something :/")
