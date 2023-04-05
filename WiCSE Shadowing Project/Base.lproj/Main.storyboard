@@ -1131,7 +1131,7 @@
         <!--Upload Workouts-->
         <scene sceneID="iRN-N6-8tg">
             <objects>
-                <viewController id="adt-Lw-PZI" customClass="ViewController" customModule="WiCSE_Shadowing_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="adt-Lw-PZI" customClass="ExploreWorkoutViewController" customModule="WiCSE_Shadowing_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GtB-1v-EaT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1314,6 +1314,9 @@
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Upload Workouts" id="QOM-jb-tIg"/>
+                    <connections>
+                        <outlet property="workoutStackView" destination="wjC-IZ-xum" id="92V-rr-dWu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Wh-JD-hax" sceneMemberID="firstResponder"/>
             </objects>
@@ -1340,7 +1343,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhY-Xa-Vz2">
-                                <rect key="frame" x="117" y="188" width="159" height="95"/>
+                                <rect key="frame" x="31" y="59" width="159" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="view">

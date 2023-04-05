@@ -31,10 +31,10 @@ class ExploreWorkoutViewController: UIViewController {
                 let workout = document.data()
                 let name = workout["name"] as? String ?? ""
                 let muscleGroup = workout["muscle_group"] as? String ?? ""
-                let workoutType = workout["workout_type"] as? String ?? ""
+                let workoutType = workout["type"] as? String ?? ""
                 let skillLevel = workout["skill_level"] as? String ?? ""
                 let goal = workout["goal"] as? String ?? ""
-                let description = workout["description"] as? String ?? ""
+                let description = workout["workout_description"] as? String ?? ""
                 
                 let workoutView = UIView()
                 workoutView.backgroundColor = .green
