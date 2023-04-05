@@ -1275,8 +1275,12 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wjC-IZ-xum">
+                                <rect key="frame" x="31" y="273" width="328" height="406"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5U-zn-vHF">
-                                <rect key="frame" x="199" y="700" width="162" height="52"/>
+                                <rect key="frame" x="197" y="687" width="162" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -1304,10 +1308,6 @@
                                     <segue destination="Et1-I1-eFS" kind="show" id="eXP-yD-xbP"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wjC-IZ-xum">
-                                <rect key="frame" x="31" y="273" width="328" height="406"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l7E-7M-Cyc"/>
                         <color key="backgroundColor" red="0.6705882353" green="0.90196078430000004" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
