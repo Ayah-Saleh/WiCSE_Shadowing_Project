@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -154,29 +155,20 @@
                                 <rect key="frame" x="411" y="273" width="91" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iZ5-wI-QES">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iZ5-wI-QES">
                                 <rect key="frame" x="303" y="25" width="58" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="bN3-L2-ks3"/>
+                                    <constraint firstAttribute="width" constant="58" id="k4i-hh-Lwn"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJd-Oa-oNg">
-                                <rect key="frame" x="23" y="59" width="346" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJd-Oa-oNg">
+                                <rect key="frame" x="23" y="118" width="346" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="hMq-CJ-xrr"/>
+                                </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="upload your">
-                                        <attributes>
-                                            <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="43" name="Futura-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7C-E2-wMr">
-                                <rect key="frame" x="23" y="98" width="346" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="own workout">
+                                    <fragment content="upload your own workout">
                                         <attributes>
                                             <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="43" name="Futura-Medium"/>
@@ -202,6 +194,7 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
+                                    <color key="baseForegroundColor" red="0.4352940917" green="0.69803923369999998" blue="0.4588235021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signUpClicked:" destination="nQr-6J-PP6" eventType="touchUpInside" id="a8X-bz-MmI"/>
@@ -218,9 +211,11 @@
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="🏋️‍♀️ name" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OJZ-Jv-D5a">
-                                <rect key="frame" x="25" y="179" width="345" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="🏋️‍♀️ name" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OJZ-Jv-D5a">
+                                <rect key="frame" x="23" y="239" width="347" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Jeo-C8-JG4"/>
+                                </constraints>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
@@ -238,476 +233,118 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aBT-qH-ZVx">
-                                <rect key="frame" x="99" y="257" width="91.333333333333329" height="93"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="tfE-e9-q7V">
+                                <rect key="frame" x="23" y="281" width="347" height="34"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnF-83-2fe">
-                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="28.333333333333332"/>
+                                    <button opaque="NO" contentMode="left" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2p7-Ne-0fq">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="34"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="build muscle">
+                                                <fragment content="📊">
                                                     <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="12" name="AppleColorEmoji"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content=" skill">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <font key="NSFont" size="12" name="Optima-Regular"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="selectedGoal:" destination="Et1-I1-eFS" eventType="touchUpInside" id="kXw-FU-OmD"/>
+                                            <action selector="skillPressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="2Go-S6-0pL"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxM-Ve-WTR">
-                                        <rect key="frame" x="0.0" y="32.333333333333336" width="91.333333333333329" height="28.333333333333336"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrB-TF-oaz">
+                                        <rect key="frame" x="84" y="0.0" width="82.666666666666686" height="34"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="tone">
+                                                <fragment content="🥅">
                                                     <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="12" name="AppleColorEmoji"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="  goal">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <font key="NSFont" size="12" name="Optima-Regular"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="selectedGoal:" destination="Et1-I1-eFS" eventType="touchUpInside" id="O1M-nk-yDt"/>
+                                            <action selector="goalPressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="2yi-1K-ZlF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kU-s2-nh7">
-                                        <rect key="frame" x="0.0" y="64.666666666666671" width="91.333333333333329" height="28.333333333333329"/>
+                                    <button opaque="NO" contentMode="left" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qY7-ya-AjV">
+                                        <rect key="frame" x="173.66666666666666" y="0.0" width="87.666666666666657" height="34"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="strength train">
+                                                <fragment content="💪">
                                                     <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="10" name="AppleColorEmoji"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content=" muscle ">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="10" name="Optima-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseBackgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="musclePressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="nYF-d9-2Fe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="left" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sS-Rg-cGp">
+                                        <rect key="frame" x="268.33333333333331" y="0.0" width="78.666666666666686" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="🏃‍♀️">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="12" name="AppleColorEmoji"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="type">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <font key="NSFont" size="12" name="Optima-Regular"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="selectedGoal:" destination="Et1-I1-eFS" eventType="touchUpInside" id="pbg-RC-3XI"/>
+                                            <action selector="typePressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="Qqf-ac-d53"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="1P0-lX-fWL"/>
+                                </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5EV-TP-wlS">
-                                <rect key="frame" x="198" y="257" width="73.666666666666671" height="254.66666666666666"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTJ-P4-XgJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="28.333333333333332"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="chest">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="8L2-vL-g1x"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOW-Jg-DqN">
-                                        <rect key="frame" x="0.0" y="32.333333333333336" width="73.666666666666671" height="28.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="abs">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="s7c-h2-gXC"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5d-wl-O6C">
-                                        <rect key="frame" x="0.0" y="64.666666666666671" width="73.666666666666671" height="28.333333333333329"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="glutes">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="nr4-05-uSo"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enG-cw-0Bi">
-                                        <rect key="frame" x="0.0" y="97" width="73.666666666666671" height="28.333333333333329"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="calves">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="buF-bt-zo9"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LM-QJ-7Gh">
-                                        <rect key="frame" x="0.0" y="129.33333333333334" width="73.666666666666671" height="28.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="back">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="gPb-Dv-4ew"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcu-cX-5w7">
-                                        <rect key="frame" x="0.0" y="161.66666666666666" width="73.666666666666671" height="28.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="legs">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="pqX-gw-FCe"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjN-eP-cBf">
-                                        <rect key="frame" x="0.0" y="194" width="73.666666666666671" height="28.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="shoulders">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="hKJ-qd-B9O"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyp-8M-2Sp">
-                                        <rect key="frame" x="0.0" y="226.33333333333334" width="73.666666666666671" height="28.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="arms">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedMuscle:" destination="Et1-I1-eFS" eventType="touchUpInside" id="lq5-yy-Ym1"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="E5n-9g-gjm">
-                                <rect key="frame" x="279" y="257" width="89.333333333333329" height="125.33333333333333"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtu-6X-tYp">
-                                        <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="28.333333333333332"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="strength">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedType:" destination="Et1-I1-eFS" eventType="touchUpInside" id="YSO-26-BGV"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F49-Bx-9c5">
-                                        <rect key="frame" x="0.0" y="32.333333333333336" width="89.333333333333329" height="28.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="stretch">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedType:" destination="Et1-I1-eFS" eventType="touchUpInside" id="OO0-TL-ikL"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNN-sE-Hso">
-                                        <rect key="frame" x="0.0" y="64.666666666666671" width="89.333333333333329" height="28.333333333333329"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="plyometrics">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedType:" destination="Et1-I1-eFS" eventType="touchUpInside" id="cRp-vQ-pSE"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mz9-YX-phN">
-                                        <rect key="frame" x="0.0" y="97" width="89.333333333333329" height="28.333333333333329"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="power lifting">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedType:" destination="Et1-I1-eFS" eventType="touchUpInside" id="Sjz-2r-Whv"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="1Pj-I8-2Ua">
-                                <rect key="frame" x="23" y="257" width="69.666666666666671" height="93"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajQ-Ic-Icg">
-                                        <rect key="frame" x="0.0" y="0.0" width="69.666666666666671" height="28.333333333333332"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="beginner">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedSkill:" destination="Et1-I1-eFS" eventType="touchUpInside" id="j0R-tM-vA5"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ff9-KH-Gbt">
-                                        <rect key="frame" x="0.0" y="32.333333333333336" width="69.666666666666671" height="28.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="expert">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedSkill:" destination="Et1-I1-eFS" eventType="touchUpInside" id="myA-SC-gRx"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdw-pV-n3j">
-                                        <rect key="frame" x="0.0" y="64.666666666666671" width="69.666666666666671" height="28.333333333333329"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="amateur">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedSkill:" destination="Et1-I1-eFS" eventType="touchUpInside" id="4Ex-Wa-gqU"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2p7-Ne-0fq">
-                                <rect key="frame" x="23" y="221" width="69.666666666666671" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="📊">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <font key="NSFont" size="12" name="AppleColorEmoji"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content=" skill">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="skillPressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="2Go-S6-0pL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrB-TF-oaz">
-                                <rect key="frame" x="99" y="221" width="91.333333333333329" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="🥅">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <font key="NSFont" size="12" name="AppleColorEmoji"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content="  goal">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="goalPressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="2yi-1K-ZlF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qY7-ya-AjV">
-                                <rect key="frame" x="197" y="221" width="74" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="💪">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <font key="NSFont" size="10" name="AppleColorEmoji"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content=" muscle ">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <font key="NSFont" size="10" name="Optima-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="musclePressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="nYF-d9-2Fe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sS-Rg-cGp">
-                                <rect key="frame" x="280" y="221" width="89.333333333333329" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="🏃‍♀️">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <font key="NSFont" size="12" name="AppleColorEmoji"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content="type">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <font key="NSFont" size="12" name="Optima-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="typePressed:" destination="Et1-I1-eFS" eventType="touchUpInside" id="Qqf-ac-d53"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uploadArrow-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="q2Q-kg-KdC">
                                 <rect key="frame" x="17" y="229" width="361" height="394"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -716,6 +353,19 @@
                         <viewLayoutGuide key="safeArea" id="hUG-H0-IXZ"/>
                         <color key="backgroundColor" red="0.6705882353" green="0.90196078430000004" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tfE-e9-q7V" firstAttribute="leading" secondItem="hUG-H0-IXZ" secondAttribute="leading" constant="23" id="Aqo-lm-Ld6"/>
+                            <constraint firstItem="tfE-e9-q7V" firstAttribute="top" secondItem="OJZ-Jv-D5a" secondAttribute="bottom" constant="8" id="ITp-CV-giA"/>
+                            <constraint firstItem="hUG-H0-IXZ" firstAttribute="trailing" secondItem="iZ5-wI-QES" secondAttribute="trailing" constant="32" id="Kz4-BE-pMJ"/>
+                            <constraint firstItem="OJZ-Jv-D5a" firstAttribute="leading" secondItem="hUG-H0-IXZ" secondAttribute="leading" constant="23" id="Xg7-d6-UXf"/>
+                            <constraint firstItem="hUG-H0-IXZ" firstAttribute="trailing" secondItem="OJZ-Jv-D5a" secondAttribute="trailing" constant="23" id="eRf-QA-oie"/>
+                            <constraint firstItem="hUG-H0-IXZ" firstAttribute="trailing" secondItem="lJd-Oa-oNg" secondAttribute="trailing" constant="24" id="eo9-0G-DLb"/>
+                            <constraint firstItem="iZ5-wI-QES" firstAttribute="top" secondItem="1Ah-F3-9t3" secondAttribute="topMargin" constant="25" id="jVs-q9-CYq"/>
+                            <constraint firstItem="hUG-H0-IXZ" firstAttribute="trailing" secondItem="tfE-e9-q7V" secondAttribute="trailing" constant="23" id="ksC-Ln-R0t"/>
+                            <constraint firstItem="lJd-Oa-oNg" firstAttribute="leading" secondItem="hUG-H0-IXZ" secondAttribute="leading" constant="23" id="mBN-WG-hhF"/>
+                            <constraint firstItem="lJd-Oa-oNg" firstAttribute="top" secondItem="1Ah-F3-9t3" secondAttribute="topMargin" constant="59" id="qUI-om-1MY"/>
+                            <constraint firstItem="OJZ-Jv-D5a" firstAttribute="top" secondItem="lJd-Oa-oNg" secondAttribute="bottom" constant="8" id="rzy-JP-Vam"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Upload Workouts" id="Rmc-JG-QNw"/>
                     <connections>
@@ -727,24 +377,6 @@
                         <outlet property="userWorkoutType" destination="2sS-Rg-cGp" id="nci-Rt-taB"/>
                         <outlet property="workoutDescription" destination="tOq-RD-VcQ" id="7rG-Vy-6w6"/>
                         <outlet property="workoutName" destination="OJZ-Jv-D5a" id="nZ1-4b-xl2"/>
-                        <outletCollection property="skillCollection" destination="ajQ-Ic-Icg" collectionClass="NSMutableArray" id="T2w-aK-5El"/>
-                        <outletCollection property="skillCollection" destination="ff9-KH-Gbt" collectionClass="NSMutableArray" id="toJ-Ym-LEH"/>
-                        <outletCollection property="skillCollection" destination="Hdw-pV-n3j" collectionClass="NSMutableArray" id="0gk-bl-pE5"/>
-                        <outletCollection property="goalCollection" destination="TnF-83-2fe" collectionClass="NSMutableArray" id="0bh-Ma-wwH"/>
-                        <outletCollection property="typeCollection" destination="vtu-6X-tYp" collectionClass="NSMutableArray" id="S5H-gT-qB7"/>
-                        <outletCollection property="typeCollection" destination="F49-Bx-9c5" collectionClass="NSMutableArray" id="a0J-m2-IUP"/>
-                        <outletCollection property="typeCollection" destination="qNN-sE-Hso" collectionClass="NSMutableArray" id="BHG-K4-WLm"/>
-                        <outletCollection property="typeCollection" destination="Mz9-YX-phN" collectionClass="NSMutableArray" id="Roh-HD-FVX"/>
-                        <outletCollection property="muscleCollection" destination="bOW-Jg-DqN" collectionClass="NSMutableArray" id="qIk-iT-G2d"/>
-                        <outletCollection property="muscleCollection" destination="HTJ-P4-XgJ" collectionClass="NSMutableArray" id="uss-f0-cve"/>
-                        <outletCollection property="muscleCollection" destination="K5d-wl-O6C" collectionClass="NSMutableArray" id="yuj-bx-DDa"/>
-                        <outletCollection property="muscleCollection" destination="enG-cw-0Bi" collectionClass="NSMutableArray" id="q7T-Ec-WCK"/>
-                        <outletCollection property="muscleCollection" destination="6LM-QJ-7Gh" collectionClass="NSMutableArray" id="bAm-EC-gXr"/>
-                        <outletCollection property="muscleCollection" destination="Bcu-cX-5w7" collectionClass="NSMutableArray" id="h6a-Za-nIS"/>
-                        <outletCollection property="muscleCollection" destination="ZjN-eP-cBf" collectionClass="NSMutableArray" id="kkw-j6-pHc"/>
-                        <outletCollection property="muscleCollection" destination="Kyp-8M-2Sp" collectionClass="NSMutableArray" id="hln-Vg-vab"/>
-                        <outletCollection property="goalCollection" destination="RxM-Ve-WTR" collectionClass="NSMutableArray" id="WtE-WW-BcM"/>
-                        <outletCollection property="goalCollection" destination="6kU-s2-nh7" collectionClass="NSMutableArray" id="QZx-Ig-u2n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FtH-QJ-XsS" sceneMemberID="firstResponder"/>
@@ -1128,10 +760,10 @@
             </objects>
             <point key="canvasLocation" x="2657" y="-54"/>
         </scene>
-        <!--Upload Workouts-->
+        <!--ExploreWorkout-->
         <scene sceneID="iRN-N6-8tg">
             <objects>
-                <viewController id="adt-Lw-PZI" customClass="ExploreWorkoutViewController" customModule="WiCSE_Shadowing_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="adt-Lw-PZI" userLabel="ExploreWorkout" customClass="ExploreWorkoutViewController" customModule="WiCSE_Shadowing_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GtB-1v-EaT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1275,33 +907,91 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wjC-IZ-xum">
-                                <rect key="frame" x="31" y="273" width="328" height="406"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cZt-oB-jZs">
+                                <rect key="frame" x="31" y="272" width="328" height="406"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExploreCell" rowHeight="242" id="XoT-s4-Fxb" customClass="ExploreCell" customModule="WiCSE_Shadowing_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="328" height="242"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XoT-s4-Fxb" id="Qag-Oq-9X4">
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="242"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDl-2e-3HZ">
+                                                    <rect key="frame" x="8" y="8" width="312" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyx-KC-04h">
+                                                    <rect key="frame" x="8" y="31" width="312" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4S-XA-aem">
+                                                    <rect key="frame" x="8" y="56" width="312" height="178"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            <constraints>
+                                                <constraint firstItem="i4S-XA-aem" firstAttribute="top" secondItem="hyx-KC-04h" secondAttribute="bottom" constant="8" id="1DE-BF-IPV"/>
+                                                <constraint firstItem="hyx-KC-04h" firstAttribute="top" secondItem="TDl-2e-3HZ" secondAttribute="bottom" constant="2" id="8TQ-kW-Xdq"/>
+                                                <constraint firstItem="hyx-KC-04h" firstAttribute="leading" secondItem="Qag-Oq-9X4" secondAttribute="leading" constant="8" id="9vA-9i-1JP"/>
+                                                <constraint firstAttribute="bottom" secondItem="i4S-XA-aem" secondAttribute="bottom" constant="8" id="BjG-LS-vzt"/>
+                                                <constraint firstAttribute="trailing" secondItem="TDl-2e-3HZ" secondAttribute="trailing" constant="8" id="EzS-Qe-KpX"/>
+                                                <constraint firstAttribute="trailing" secondItem="hyx-KC-04h" secondAttribute="trailing" constant="8" id="KCZ-yk-mPJ"/>
+                                                <constraint firstItem="TDl-2e-3HZ" firstAttribute="leading" secondItem="Qag-Oq-9X4" secondAttribute="leading" constant="8" id="NAB-nP-7uP"/>
+                                                <constraint firstItem="TDl-2e-3HZ" firstAttribute="top" secondItem="Qag-Oq-9X4" secondAttribute="top" constant="8" id="O5E-o2-vdz"/>
+                                                <constraint firstItem="i4S-XA-aem" firstAttribute="leading" secondItem="Qag-Oq-9X4" secondAttribute="leading" constant="8" id="WOw-3y-Dfl"/>
+                                                <constraint firstAttribute="trailing" secondItem="i4S-XA-aem" secondAttribute="trailing" constant="8" id="bKe-Y5-kcM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descLbl" destination="i4S-XA-aem" id="skn-um-6eI"/>
+                                            <outlet property="mergeLbl" destination="hyx-KC-04h" id="vWW-zo-8lP"/>
+                                            <outlet property="nameLbl" destination="TDl-2e-3HZ" id="MLp-bU-fee"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="adt-Lw-PZI" id="gZM-dg-T3d"/>
+                                    <outlet property="delegate" destination="adt-Lw-PZI" id="DjJ-lH-Ny9"/>
+                                </connections>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5U-zn-vHF">
                                 <rect key="frame" x="197" y="687" width="162" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="dynamic">
                                     <backgroundConfiguration key="background"/>
                                     <attributedString key="attributedTitle">
                                         <fragment content="UPLOAD">
                                             <attributes>
-                                                <color key="NSColor" red="0.28297725340136054" green="0.65935905612244894" blue="0.36057079081632654" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="26" name="Optima-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <color key="NSColor" red="0.4352940917" green="0.69803923369999998" blue="0.4588235021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="25" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="27" name="AppleColorEmoji"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="⬆️">
                                             <attributes>
-                                                <color key="NSColor" red="0.28298000000000001" green="0.65935999999999995" blue="0.36057" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="26" name="AppleColorEmoji"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <color key="NSColor" red="0.4352940917" green="0.69803923369999998" blue="0.4588235021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="25" name="AppleColorEmoji"/>
+                                                <font key="NSOriginalFont" size="25" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
+                                    <color key="baseForegroundColor" red="0.4352940917" green="0.69803923369999998" blue="0.4588235021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signUpClicked:" destination="nQr-6J-PP6" eventType="touchUpInside" id="IrP-js-874"/>
@@ -1315,7 +1005,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Upload Workouts" id="QOM-jb-tIg"/>
                     <connections>
-                        <outlet property="workoutStackView" destination="wjC-IZ-xum" id="92V-rr-dWu"/>
+                        <outlet property="aTableView" destination="cZt-oB-jZs" id="XNS-Ow-9eF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Wh-JD-hax" sceneMemberID="firstResponder"/>
@@ -1379,5 +1069,8 @@
         <image name="greenSpa.png" width="553" height="452"/>
         <image name="uploadArrow-removebg-preview" width="531" height="470"/>
         <image name="uploadProfileImage" width="1188" height="494"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

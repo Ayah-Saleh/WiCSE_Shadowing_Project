@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A7888C7B-25F0-4FAF-AB58-6A7218C5A98C"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "198CC898-4366-4E07-A4F9-B2085B466547"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiCSE Shadowing Project/ViewControllers/ExploreWorkoutViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D338955C-9CBC-478B-B22D-4D4E21A77820"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiCSE Shadowing Project/ViewControllers/ExploreWorkoutViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fetchWorkouts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D338955C-9CBC-478B-B22D-4D4E21A77820 - 89e96336a854ab50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WiCSE_Shadowing_Project.ExploreWorkoutViewController.fetchWorkouts() -&gt; ()"
+                  moduleName = "WiCSE Shadowing Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/monika/Projects/Ayah_LatestProject/WiCSE_Shadowing_Project/WiCSE%20Shadowing%20Project/ViewControllers/ExploreWorkoutViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "D338955C-9CBC-478B-B22D-4D4E21A77820 - d52d9259d85ceed5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WiCSE_Shadowing_Project.ExploreWorkoutViewController.fetchWorkouts() -&gt; ()"
+                  moduleName = "WiCSE Shadowing Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/monika/Projects/Ayah_LatestProject/WiCSE_Shadowing_Project/WiCSE%20Shadowing%20Project/ViewControllers/ExploreWorkoutViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "120">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9961F64A-38FA-4E62-9C7D-B01E632188E0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiCSE Shadowing Project/ViewControllers/ExploreWorkoutViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetchWorkouts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9961F64A-38FA-4E62-9C7D-B01E632188E0 - d52d9259d85cef36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WiCSE_Shadowing_Project.ExploreWorkoutViewController.fetchWorkouts() -&gt; ()"
+                  moduleName = "WiCSE Shadowing Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/monika/Projects/Ayah_LatestProject/WiCSE_Shadowing_Project/WiCSE%20Shadowing%20Project/ViewControllers/ExploreWorkoutViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "9961F64A-38FA-4E62-9C7D-B01E632188E0 - d52d9259d85cef36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WiCSE_Shadowing_Project.ExploreWorkoutViewController.fetchWorkouts() -&gt; ()"
+                  moduleName = "WiCSE Shadowing Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/monika/Projects/Ayah_LatestProject/WiCSE_Shadowing_Project/WiCSE%20Shadowing%20Project/ViewControllers/ExploreWorkoutViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "288">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9661DEE-6863-490D-87DA-61DB82CA483E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiCSE Shadowing Project/ViewControllers/ExploreWorkoutViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "952AC864-34A7-44B5-BD84-25A18C7667DC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiCSE Shadowing Project/ViewControllers/ExploreWorkoutViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "fetchWorkouts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88C6D044-0064-49B6-B3C3-39CE196962C1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiCSE Shadowing Project/ViewControllers/ExploreWorkoutViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchWorkouts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
